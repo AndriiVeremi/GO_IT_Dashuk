@@ -1,99 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>BarberShop</title>
   </head>
   <body>
-    <header>
-      <a href="/">
-        <img src="./img/logo.svg" alt="logo" />
+    <header class="header">
+      <a href="/" class="header-logo">
+        <img class="header-logo-img" src="./img/logo.svg" alt="logo" />
       </a>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services and prices</a></li>
-          <li><a href="#">Barbers</a></li>
-          <li><a href="#">Contacts</a></li>
+      <nav class="header-nav">
+        <ul class="header-list list">
+          <li class="header-list-item"><a class="header-list-link header-link link list-activ-link" href="#">About</a></li>
+          <li class="header-list-item"><a class="header-list-link header-link link" href="#">Services and prices</a></li>
+          <li class="header-list-item"><a class="header-list-link header-link link" href="#">Barbers</a></li>
+          <li class="header-list-item"><a class="header-list-link header-link link" href="#">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+4788783792">+4788783792</a>
-      <button type="button">Online-booking</button>
+      <a class="header-tel-link header-link link" href="tel:+4788783792">+4788783792</a>
+      <button class="header-button" type="button">Online-booking</button>
     </header>
 
     <main>
-
       <!--Services and prices-->
 
       <section class="hero">
-        <ul>
-          <li><a href="#" target="_blank" rel="noreferrer noopener nofollow">Instagram</a></li>
-          <li><a href="#" target="_blank" rel="noreferrer noopener nofollow">Youtube</a></li>
+        <ul class="hero-list list">
+          <li class="hero-list-item"><a class="hero-list-link link" href="#" target="_blank" rel="noreferrer noopener nofollow">Instagram</a></li>
+          <li class="hero-list-item"><a class="hero-list-link link" href="#" target="_blank" rel="noreferrer noopener nofollow">Youtube</a></li>
         </ul>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+        <p class="hero-pre-title">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-text">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
       </section>
 
       <!--About-->
 
       <section class="about">
-          <img src="./img/about_img_1.jpg" alt="heircut1" width="270">
-          <img src="./img/about_img_2.jpg" alt="heircut2" width="270">
-          <p>About</p>
-          <h2>Best Barbershop in your city</h2>
-          <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-          <p>We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-          <button type="button">ONLINE-BOOKING</button>
+        <img  class="about-img" src="./img/about_img_1.jpg" alt="heircut1" width="270" />
+        <img  class="about-img" src="./img/about_img_2.jpg" alt="heircut2" width="270" />
+        <p class="about-pre-title">About</p>
+        <h2 class="about-title second-title">Best Barbershop in your city</h2>
+        <p class="about-after-title">If you want to add more confidence to your image, you should definitely visit us.</p>
+        <p class="about-text">
+          We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into
+          the hands of our master, you will never be the same again. We are a team that is always "on the same wave"
+          with clients. Therefore, we are always ready to improve everyone who comes to us!
+        </p>
+        <button class="about-botton" type="button">ONLINE-BOOKING</button>
       </section>
 
       <!--Services and prices-->
 
       <section>
-        <p>Spend your time with the best masters</p>
-          <h2>Services and prices</h2>
-          
-          <ul>
-            <li>
-              <p>Men’s haircut</p>
-              <p>from 300 uah.</p>
-            </li>
-            <li>
-              <p>Beard trim</p>
-              <p>from 300 uah.</p>
-            </li>
-            <li>
-              <p>Mustache trim</p>
-              <p>from 200 uah.</p>
-            </li>
-            <li>
-              <p>Straight razor shave</p>
-              <p>from 200 uah.</p>
-            </li>
-          </ul>
+        <p class="services-pre-title">Spend your time with the best masters</p>
+        <h2 class="services-title second-title">Services and prices</h2>
 
-          <ul>
-            <li>
-              <p>Trainee’s haircut</p>
-              <p>from 50 uah.</p>
-            </li>
-            <li>
-              <p>Haircut under the nozzle</p>
-              <p>from 200 uah.</p>
-            </li>
-            <li>
-              <p>Children’s haircut (0-12 y.o.)</p>
-              <p>from 300 uah.</p>
-            </li>
-            <li>
-              <p>Camouflage of gray hair</p>
-              <p>from 200 uah.</p>
-            </li>
-          </ul>
+        <ul class="services-list list">
+          <li class="services-list-item">
+            <p class="services-text text-left">Men’s haircut</p>
+            <p class="services-text text-right">from 300 uah.</p>
+          </li>
+          <li>
+            <p class="services-text text-left">Beard trim</p>
+            <p class="services-text text-right">from 300 uah.</p>
+          </li>
+          <li>
+            <p class="services-text text-left">Mustache trim</p>
+            <p class="services-text text-right">from 200 uah.</p>
+          </li>
+          <li>
+            <p class="services-text text-left">Straight razor shave</p>
+            <p class="services-text text-right">from 200 uah.</p>
+          </li>
+        </ul>
 
-          <button type="button">ONLINE-BOOKING</button>
+        <ul class="services-list list">
+          <li>
+            <p class="services-text text-left">Trainee’s haircut</p>
+            <p class="services-text text-right">from 50 uah.</p>
+          </li>
+          <li>
+            <p class="services-text text-left">Haircut under the nozzle</p>
+            <p class="services-text text-right">from 200 uah.</p>
+          </li>
+          <li>
+            <p class="services-text text-left">Children’s haircut (0-12 y.o.)</p>
+            <p class="services-text text-right">from 300 uah.</p>
+          </li>
+          <li>
+            <p class="services-text text-left">Camouflage of gray hair</p>
+            <p class="services-text text-right">from 200 uah.</p>
+          </li>
+        </ul>
+
+        <button class="services-button" type="button">ONLINE-BOOKING</button>
       </section>
 
       <!--Raitings-->
@@ -101,7 +111,7 @@
       <section>
         <p>Old traditional school</p>
         <h2>¿Why people come to us?</h2>
-        <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+        <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
 
         <ul>
           <li>
@@ -127,21 +137,21 @@
 
       <section>
         <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>       
+        <h2>Our barbers</h2>
         <ul>
           <li>
-            <img src="./img/barber_img_1.jpg" alt="barber photo" width="370">
+            <img src="./img/barber_img_1.jpg" alt="barber photo" width="370" />
             <h3>John Smith</h3>
             <p>Extreme Barber</p>
           </li>
 
           <li>
-            <img src="./img/barber_img_2.jpg" alt=" photo" width="370">
+            <img src="./img/barber_img_2.jpg" alt=" photo" width="370" />
             <h3>Michele Doe</h3>
             <p>Extreme Barber</p>
           </li>
           <li>
-            <img src="./img/barber_img_3.jpg" alt="barber photo" width="370">
+            <img src="./img/barber_img_3.jpg" alt="barber photo" width="370" />
             <h3>Alan Black</h3>
             <p>Extreme Barber</p>
           </li>
@@ -153,10 +163,10 @@
       <section>
         <p>In Latin, "barba" means "beard"</p>
         <ul>
-          <li><img src="./img/rectangle_1.jpg" alt="barber worck" width="270"></li>
-          <li><img src="./img/rectangle_2.jpg" alt="barber worck" width="270"></li>
-          <li><img src="./img/rectangle_3.jpg" alt="barber worck" width="270"></li>
-          <li><img src="./img/rectangle_4.jpg" alt="barber worck" width="270"></li>
+          <li><img src="./img/rectangle_1.jpg" alt="barber worck" width="270" /></li>
+          <li><img src="./img/rectangle_2.jpg" alt="barber worck" width="270" /></li>
+          <li><img src="./img/rectangle_3.jpg" alt="barber worck" width="270" /></li>
+          <li><img src="./img/rectangle_4.jpg" alt="barber worck" width="270" /></li>
         </ul>
       </section>
 
@@ -180,10 +190,9 @@
     <footer>
       <p>&copy;Copyright 2022</p>
       <ul>
-          <li><a href="#" target="_blank" rel="noreferrer noopener nofollow">Instagram</a></li>
-          <li><a href="#" target="_blank" rel="noreferrer noopener nofollow">Youtube</a></li>
+        <li><a href="#" target="_blank" rel="noreferrer noopener nofollow">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noreferrer noopener nofollow">Youtube</a></li>
       </ul>
     </footer>
-    
   </body>
 </html>
