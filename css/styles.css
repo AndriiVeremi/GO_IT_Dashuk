@@ -1,16 +1,34 @@
+
+/* General styles */
+
 :root {
   --main-color: #303030;
-  --color-text: #fff;
-  --color-text-hover: #ff6c00;
-  --second-text-color: #555555;
+  --second-color: #555555;
+  --accent-color: #ff6c00;
+  --pre-title-case: uppercase;
+  --title-first-color: #ffffff;
+  --title-second-color: #303030;
+  --button-first-color: #ffffff;
+  --button-second-color: #303030;
 }
 
-body {
-  background-color: #9da4bd;
+.page-body {
   font-family: "Open Sans", sans-serif;
+  background-color: grey;
 }
 
-/* general style */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .link {
   text-decoration: none;
@@ -23,52 +41,57 @@ body {
 .button {
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: calc(16 / 12);
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.second-button:hover,
+.second-button:focus {
+  color: var(--button-first-color);
+}
+
+.title {
+  font-family: "Railway", sans-serif;
 }
 
 .second-title {
- font-weight: 600;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.pre-title {
+  font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
-  text-transform: uppercase;
+  text-transform: var(--pre-title-case);
 }
 
-/* header style */
+/* Header styles */
 
-.header-list-link {
-  font-family: "Open Sans";
-  font-style: normal;
+.header-link {
   font-weight: 600;
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.1em;
-  color: var(--color-text);
+  color: #ffffff;
 }
 
-.header-list-link:hover,
-.header-list-link:focus {
-  color: var(--color-text-hover);
-}
-
-.header-tel-link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--color-text);
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
 }
 
 .header-button {
-  color: var(--color-text);
+  color: var(--button-first-color);
 }
 
-/* hero style */
+/* Hero styles */
 
-.hero-list-link {
+.hero .list-link {
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -76,25 +99,20 @@ body {
   color: var(--main-color);
 }
 
-.hero-list-link:hover,
-.hero-list-link:focus {
-  color: var(--color-text-hover);
+.hero .list-link:hover,
+.hero .list-link:focus {
+  color: var(--accent-color);
 }
 
-.hero-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
-  text-transform: uppercase;
+.hero .pre-title {
   color: rgba(157, 164, 189, 0.6);
 }
 
-.hero-title {
-  font-family: "Raleway";
+.hero .title {
   font-size: 72px;
   line-height: calc(85 / 72);
   letter-spacing: 0.05em;
-  color: var(--color-text);
+  color: var(--title-first-color);
 }
 
 .hero-text {
@@ -104,54 +122,45 @@ body {
   color: #9da4bd;
 }
 
-.about-pre-title {
+/* About styles */
+
+.about .pre-title {
   color: var(--main-color);
 }
 
-.about-title {
-  font-family: "Raleway";
-  font-size: 42px;
-  line-height: var(49 / 42);
-  letter-spacing: 0.05em;
-  color: var(--main-color);
+.about .title {
+  color: var(--title-second-color);
 }
 
-.about-after-title {
+.about .after-title {
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
+  color: var(--second-color);
 }
 
 .about-text {
   font-size: 14px;
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
+  color: var(--second-color);
 }
 
-.about-botton {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--main-color);
+.about-button {
+  color: var(--button-second-color);
 }
 
-.services-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
+/* Services styles */
+
+.services .pre-title {
   color: rgba(157, 164, 189, 0.6);
 }
 
-.services-title {
-  color: rgba(157, 164, 189, 0.6);
+.services .title {
+  color: var(--title-first-color);
 }
 
-.services-text {
+.services .text {
   font-size: 18px;
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
@@ -159,10 +168,91 @@ body {
 }
 
 .services-button {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--color-text);
+  color: var(--button-first-color);
 }
+
+/* Benefits styles */
+
+.benefits-list .number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+  color: var(--main-color);
+}
+
+.benefits-list .sign {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: var(--accent-color);
+}
+
+.benefits-list .text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  color: var(--main-color);
+}
+
+.benefits .pre-title {
+  color: var(--main-color);
+}
+
+.benefits .title {
+  color: var(--title-second-color);
+}
+
+.benefits .after-title {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+
+/* Barbers styles */
+
+.barbers .pre-title {
+  color: var(--main-color);
+}
+
+.barbers .title {
+  color: var(--title-second-color);
+}
+
+.barber-name {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.barber-position {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* Gallery styles */
+
+.gallery .pre-title {
+  color: var(--main-color);
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+html-css-lessons/style.css at main · Karina0895/html-css-lessons
