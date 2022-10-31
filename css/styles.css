@@ -20,14 +20,18 @@ p {
 
 .page-body {
   font-family: "Open Sans", sans-serif;
-  background-color: grey;
+  
 }
 
 .container {
+  outline: 1px solid rebeccapurple;
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
 }
+
+
 
 .visually-hidden {
   position: absolute;
@@ -92,6 +96,28 @@ p {
 
 .page-header {
   padding: 32px 0;
+  background-color: #9da4bd;
+}
+
+.header-logo {
+  margin-right: 120px;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list .item:not(:first-child) {
+  margin-left: 25px;
+}
+  
+.header-contacts {
+  margin-left: auto;
 }
 
 .header-link {
@@ -108,10 +134,19 @@ p {
 }
 
 .header-button {
+  margin-left: 35px;
   color: var(--button-first-color);
 }
 
 /* Hero styles */
+
+.hero .container {
+  display: flex;
+}
+
+.hero-list {
+  width: 100px;
+}
 
 .hero .list-link {
   font-weight: 600;
@@ -127,10 +162,12 @@ p {
 }
 
 .hero-description {
+  background-color: #3a322d;
   padding-top: 176px;
   padding-left: 200px;
   padding-right: 50px;
   padding-bottom: 210px;
+  flex-grow: 1;
 }
 
 .hero .pre-title {
@@ -158,6 +195,15 @@ p {
 
 .about {
   padding: 120px 0;
+}
+
+.about .container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-img {
+  margin-right: 30px;
 }
 
 .about .pre-title {
@@ -192,6 +238,11 @@ p {
 
 /* Services styles */
 
+.services {
+  background-color: #555555;
+  padding: 120px 0;
+}
+
 .services .pre-title {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: var(--specific-ident);
@@ -202,12 +253,25 @@ p {
   margin-bottom: 44px;
 }
 
+.services .our-price {
+  display: flex;
+  margin-right: -30px;
+}
+
 .services-list {
   border: 1px solid #000000;
   padding: 30px 20px;
+  width: calc((100%-30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 44px;
 }
 
 .services-list .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list .item:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -219,6 +283,8 @@ p {
 }
 
 .services-button {
+  display: block;
+  margin: auto;
   color: var(--button-first-color);
 }
 
@@ -263,12 +329,26 @@ p {
 
 /* Barbers styles */
 
+.barber {
+  padding: 120px 0;
+}
+
 .barbers .pre-title {
   color: var(--main-color);
 }
 
 .barbers .title {
   color: var(--title-second-color);
+}
+
+.barber-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.barber-list .item {
+  width: calc((100% - 30px) / 3);
+  margin-left: 30px;
 }
 
 .barber-name {
@@ -289,6 +369,22 @@ p {
 
 /* Gallery styles */
 
+.gallery {
+  padding: 120px 0;
+}
+
 .gallery .pre-title {
+  margin-bottom: 44px;
   color: var(--main-color);
 }
+
+.gallery-images {
+  display: flex;
+  margin-right: -30px;
+}
+
+.gallery-images .img {
+  flex-basis: calc((100% - 30px) / 4);
+  margin-right: 30px;
+}
+
