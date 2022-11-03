@@ -92,6 +92,13 @@ p {
   text-transform: var(--pre-title-case);
 }
 
+.pre-title::before {
+  content: ;
+  display: inline-block;
+  height: 1px;
+  width: ;
+}
+
 /* Header styles */
 
 .page-header {
@@ -162,11 +169,13 @@ p {
 }
 
 .hero-description {
-  background-color: #3a322d;
   padding-top: 176px;
   padding-left: 200px;
   padding-right: 50px;
   padding-bottom: 210px;
+  background-color: #3a322d;
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), 
+                    url(../img/hero_bd.jpg);
   flex-grow: 1;
 }
 
@@ -239,7 +248,9 @@ p {
 /* Services styles */
 
 .services {
-  background-color: #555555;
+  background-color: rgb(17, 19, 25);
+  background-image: url(../img/service_bg.png); 
+  background-position: cover;
   padding: 120px 0;
 }
 
@@ -261,9 +272,17 @@ p {
 .services-list {
   border: 1px solid #000000;
   padding: 30px 20px;
-  width: calc((100%-30px) / 2);
+  width: calc((100% / 2) - 30px);
   margin-right: 30px;
   margin-bottom: 44px;
+}
+
+.services-list-first {
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-list-second {
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .services-list .item {
@@ -289,6 +308,12 @@ p {
 }
 
 /* Benefits styles */
+
+.benefits-list .item {
+  background-color: #7f7f7f;
+  width: 120px;
+  height: 100px;
+}
 
 .benefits-list .number {
   font-weight: 700;
@@ -331,6 +356,7 @@ p {
 
 .barber {
   padding: 120px 0;
+  background-color: #f7f7f7;
 }
 
 .barbers .pre-title {
@@ -347,7 +373,7 @@ p {
 }
 
 .barber-list .item {
-  width: calc((100% - 30px) / 3);
+  width: calc((100% / 3) - 30px);
   margin-left: 30px;
 }
 
@@ -388,3 +414,18 @@ p {
   margin-right: 30px;
 }
 
+/* booking-contacts styles */
+
+.booking-contacts {
+  display: flex;
+  height: 634px;
+  background-color: #191C26;;
+  background-image: url(../img/contacts_bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.booking-contacts .contacts {
+  width: 50%;
+  justify-content: space-between;
+}
