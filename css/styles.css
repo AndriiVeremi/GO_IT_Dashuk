@@ -385,6 +385,30 @@ p {
   margin-left: 30px;
 }
 
+.barber-list .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+ 
+}
+
+.barber-list .social-item {
+  width: 44px;
+  height: 44px;
+  background-color: #555555;
+  margin-right: 10px;
+   border-radius: 50%;
+  
+}
+
+.barber-list .social-link {
+  
+}
+
+.barber-list .social-item:last-child {
+  margin-right: 0;
+}
+
 .barber-name {
   font-size: 18px;
   line-height: calc(25 / 18);
