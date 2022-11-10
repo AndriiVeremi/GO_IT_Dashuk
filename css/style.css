@@ -101,6 +101,7 @@ p {
 /* Header styles */
 
 .page-header {
+  position: absolute;
   
   padding: 32px 0;
   background-color: #9da4bd;
@@ -117,6 +118,13 @@ p {
 
 .header-list {
   display: flex;
+}
+
+.hero .social-wrapper {
+display: flex;
+width: 100%;
+align-items: flex-start;
+
 }
 
 .header-list .item:not(:first-child) {
@@ -152,7 +160,15 @@ p {
 }
 
 .hero-list {
+  display: flex;
   width: 100px;
+  transform: rotate(90deg) translateX(19px);
+  transform-origin: left top;
+}
+
+.hero .list-item {
+
+
 }
 
 .hero .list-link {
