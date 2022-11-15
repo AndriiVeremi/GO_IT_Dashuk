@@ -200,11 +200,7 @@ p {
   padding-right: 50px;
   padding-bottom: 210px;
   background-color: #2d2c2c;
-  background-image: linear-gradient(
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
-    ),
-    url(../img/hero-description-bg.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero-description-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 1;
@@ -619,7 +615,7 @@ p {
 
 .modal {
   width: 500px;
-  height: 400px;
+  height: 550px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -648,3 +644,30 @@ p {
   opacity: 0;
   pointer-events: none;
 }
+
+.modal {
+  padding: 40px;
+}
+
+.modal-input {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #ff6c00;
+  font: 500;
+  font-size: 14px;
+}
+
+.modal-textarea {
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+ color: #ff6c00;
+  font: 500;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
