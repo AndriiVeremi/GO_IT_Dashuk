@@ -1,0 +1,26 @@
+.title {
+  font-family: "Railway", sans-serif;
+}
+
+.second-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: var(--pre-title-case);
+}
+
+.pre-title::before {
+  content: " ";
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  background-color: var(--main-color);
+  margin-right: 20px;
+  vertical-align: middle;
+}

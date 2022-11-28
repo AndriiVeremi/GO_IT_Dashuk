@@ -1,0 +1,47 @@
+/* Header styles */
+
+.page-header {
+  padding: 32px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 120px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list .item:not(:first-child) {
+  margin-left: 25px;
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transition: color 500ms linear;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-button {
+  color: var(--button-first-color);
+  margin-left: 35px;
+}

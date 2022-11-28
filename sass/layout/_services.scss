@@ -1,0 +1,62 @@
+/* Services styles */
+
+.services {
+  background-color: rgb(17, 19, 25);
+  background-image: url(../img/services-bg.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.services .pre-title {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--specific-ident);
+}
+
+.services .title {
+  color: var(--title-first-color);
+  margin-bottom: 44px;
+}
+
+.services .our-price {
+  display: flex;
+  margin-right: -30px;
+}
+
+.services-list {
+  padding: 30px 20px;
+  width: calc((100% - 60px) / 2);
+  margin-right: 30px;
+  margin-bottom: 44px;
+}
+
+.services-first {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-second {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services-list .item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.services-list .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.services-button {
+  color: var(--button-first-color);
+  display: block;
+  margin: auto;
+}
