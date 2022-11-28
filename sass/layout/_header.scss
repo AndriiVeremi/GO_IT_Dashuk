@@ -34,11 +34,10 @@
   letter-spacing: 0.1em;
   color: #ffffff;
   transition: color 500ms linear;
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-button {

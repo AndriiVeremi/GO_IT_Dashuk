@@ -2,19 +2,17 @@
 
 .gallery {
   padding: 120px 0;
-}
-
-.gallery .pre-title {
-  color: var(--main-color);
-  margin-bottom: 44px;
+  .pre-title {
+    color: var(--main-color);
+    margin-bottom: 44px;
+  }
 }
 
 .gallery-images {
   display: flex;
   margin-right: -30px;
-}
-
-.gallery-images .img {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-right: 30px;
+  .img {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-right: 30px;
+  }
 }
