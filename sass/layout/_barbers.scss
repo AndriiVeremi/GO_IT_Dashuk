@@ -4,10 +4,10 @@
   padding: 120px 0;
   background-color: #f7f7f7;
   .pre-title {
-    color: var(--main-color);
+    color: $main-color;
   }
   .title {
-    color: var(--title-second-color);
+    color: $title-second-color;
   }
 }
 
@@ -44,7 +44,7 @@
     justify-content: center;
     border-radius: 50%;
     background-color: #ffffff;
-    color: var(--main-color);
+    color: $main-color;
   }
   .social-icon {
     fill: currentColor;
@@ -82,7 +82,7 @@
 
 .barber-list .social-link:hover,
 .barber-list .social-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .barber-name {
@@ -90,7 +90,7 @@
   line-height: calc(25 / 18);
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .barber-position {
@@ -98,5 +98,5 @@
   line-height: calc(19 / 14);
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
+  color: $accent-color;
 }

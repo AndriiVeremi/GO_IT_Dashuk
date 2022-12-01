@@ -9,8 +9,8 @@
   }
   
   .pre-title {
-    color: var(--main-color);
-    margin-bottom: var(--specific-ident);
+    color: $main-color;
+    margin-bottom: $specific-ident;
   }
   
   .title {
@@ -22,8 +22,8 @@
     font-size: 18px;
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
-    color: var(--second-color);
-    margin-bottom: var(--specific-ident);
+    color: $second-color;
+    margin-bottom: $specific-ident;
   }
 }
 
@@ -35,10 +35,10 @@
   font-size: 14px;
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
-  color: var(--second-color);
+  color: $second-color;
   margin-bottom: 42px;
 }
 
 .about-button {
-  color: var(--button-second-color);
+  color: $button-second-color;
 }

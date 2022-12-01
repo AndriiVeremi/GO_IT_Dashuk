@@ -36,11 +36,11 @@
   transition: color 500ms linear;
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
 .header-button {
-  color: var(--button-first-color);
+  color: $button-first-color;
   margin-left: 35px;
 }

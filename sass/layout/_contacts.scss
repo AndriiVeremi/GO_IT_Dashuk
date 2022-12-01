@@ -74,7 +74,7 @@
 
 .booking-form .button {
   display: inline-block;
-  color: var(--button-first-color);
+  color: $button-first-color;
 }
 
 .booking-form .name-input + input {
@@ -105,15 +105,15 @@
 
 .contacts .title,
 .booking .title {
-  color: var(--title-first-color);
+  color: $title-first-color;
   margin-bottom: 40px;
 }
 
 .contacts .address-link:hover {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .contacts .address-link:hover,
 .contacts .address-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }

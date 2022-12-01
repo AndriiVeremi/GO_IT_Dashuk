@@ -15,7 +15,7 @@
     position: absolute;
     width: 40px;
     height: 1px;
-    background-color: var(--main-color);
+    background-color: $main-color;
     left: -40px;
     top: 9px;
   }
@@ -37,15 +37,15 @@
     font-size: 11px;
     line-height: calc(15 / 11);
     letter-spacing: 0.2em;
-    color: var(--main-color);
+    color: $main-color;
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
   .pre-title {
     color: rgba(157, 164, 189, 0.6);
-    margin-bottom: var(--specific-ident);
+    margin-bottom: $specific-ident;
     &::before {
       background-color: rgba(157, 164, 189, 0.6);
     }
@@ -54,8 +54,8 @@
     font-size: 72px;
     line-height: calc(85 / 72);
     letter-spacing: 0.05em;
-    color: var(--title-first-color);
-    margin-bottom: var(--specific-ident);
+    color: $title-first-color;
+    margin-bottom: $specific-ident;
   }
 }
 
