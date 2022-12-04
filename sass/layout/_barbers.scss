@@ -1,8 +1,8 @@
 /* Barbers styles */
 
 .barbers {
+  @include sectionBack($section-color);
   padding: 120px 0;
-  background-color: #f7f7f7;
   .pre-title {
     color: $main-color;
   }

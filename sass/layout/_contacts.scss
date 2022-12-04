@@ -7,15 +7,17 @@
   height: 634px;
   background-repeat: no-repeat;
   background-position: right;
-  .booking {
-    padding-top: 130px;
-    padding-left: 216px;
-    padding-right: 30px;
-  }
-  .contacts {
-    width: 50%;
-    background-image: url(../img/contacts-bg.png);
-  }
+}
+
+.booking-contacts .booking {
+  padding-top: 130px;
+  padding-left: 216px;
+  padding-right: 30px;
+}
+
+.booking-contacts .contacts {
+  width: 50%;
+  background-image: url(../img/contacts-bg.png);
 }
 
 .booking-form {
@@ -74,7 +76,7 @@
 
 .booking-form .button {
   display: inline-block;
-  color: $button-first-color;
+  color: var(--button-first-color);
 }
 
 .booking-form .name-input + input {
@@ -85,35 +87,39 @@
   padding-top: 130px;
   padding-bottom: 120px;
   padding-left: 100px;
-  .contact-address {
-    font-style: normal;
-  }
-  .address-item {
-    margin-bottom: 20px;
-  }
-  .address-link {
-    display: flex;
-    align-items: center;
-    color: #9da4bd;
-  }
-  .icon {
-    margin-right: 16px;
-    fill: none;
-    stroke: currentColor;
-  }
 }
 
 .contacts .title,
 .booking .title {
-  color: $title-first-color;
+  color: var(--title-first-color);
   margin-bottom: 40px;
 }
 
+.contacts .contact-address {
+  font-style: normal;
+}
+
+.contacts .address-item {
+  margin-bottom: 20px;
+}
+
+.contacts .address-link {
+  display: flex;
+  align-items: center;
+  color: #9da4bd;
+}
+
 .contacts .address-link:hover {
-  color: $accent-color;
+  color: var(--accent-color);
+}
+
+.contacts .icon {
+  margin-right: 16px;
+  fill: none;
+  stroke: currentColor;
 }
 
 .contacts .address-link:hover,
 .contacts .address-link:focus {
-  color: $accent-color;
+  color: var(--accent-color);
 }

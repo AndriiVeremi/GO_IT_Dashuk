@@ -343,8 +343,8 @@ p {
 
 /* Barbers styles */
 .barbers {
-  padding: 120px 0;
   background-color: #f7f7f7;
+  padding: 120px 0;
 }
 .barbers .pre-title {
   color: #303030;
@@ -568,11 +568,13 @@ p {
   background-repeat: no-repeat;
   background-position: right;
 }
+
 .booking-contacts .booking {
   padding-top: 130px;
   padding-left: 216px;
   padding-right: 30px;
 }
+
 .booking-contacts .contacts {
   width: 50%;
   background-image: url(../img/contacts-bg.png);
@@ -677,7 +679,7 @@ p {
 
 .booking-form .button {
   display: inline-block;
-  color: #ffffff;
+  color: var(--button-first-color);
 }
 
 .booking-form .name-input + input {
@@ -689,12 +691,21 @@ p {
   padding-bottom: 120px;
   padding-left: 100px;
 }
+
+.contacts .title,
+.booking .title {
+  color: var(--title-first-color);
+  margin-bottom: 40px;
+}
+
 .contacts .contact-address {
   font-style: normal;
 }
+
 .contacts .address-item {
   margin-bottom: 20px;
 }
+
 .contacts .address-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,25 +715,20 @@ p {
           align-items: center;
   color: #9da4bd;
 }
+
+.contacts .address-link:hover {
+  color: var(--accent-color);
+}
+
 .contacts .icon {
   margin-right: 16px;
   fill: none;
   stroke: currentColor;
 }
 
-.contacts .title,
-.booking .title {
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.contacts .address-link:hover {
-  color: #ff6c00;
-}
-
 .contacts .address-link:hover,
 .contacts .address-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .modal-backdrop {
